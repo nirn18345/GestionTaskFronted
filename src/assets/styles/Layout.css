@@ -1,0 +1,115 @@
+/* Estilos base */
+.sidebar {
+  background-color: #fff;
+  height: 100vh;
+  border-right: 1px solid #eee;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+  padding-top: 1rem;
+  z-index: 1050;
+}
+
+/* Tamaños en escritorio */
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar.expanded {
+  width: 300px;
+}
+
+/* Comportamiento móvil */
+.sidebar.mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  transform: translateX(-100%);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.mobile.open {
+  transform: translateX(0);
+}
+
+.sidebar.mobile.closed {
+  transform: translateX(-100%);
+}
+
+/* Links */
+.sidebar-link {
+  padding: 10px;
+  color: #333;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.sidebar-link:hover {
+  background-color: #f8f9fa;
+}
+
+.sidebar-link i {
+  font-size: 1.5rem;
+}
+
+.sidebar.collapsed .sidebar-link {
+  justify-content: center !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Oculta texto cuando está colapsado */
+.sidebar.collapsed .sidebar-link span {
+  display: none;
+}
+
+
+
+  /*Overlay notificacion*/
+  .notification-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .notification-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .notification-avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  .notification-text {
+    flex-grow: 1;
+  }
+  
+  .notification-text .name {
+    font-weight: 600;
+  }
+  
+  .notification-text .message {
+    color: #6c757d;
+    font-size: 0.875rem;
+  }
+  
+  .notification-text .time {
+    color: #adb5bd;
+    font-size: 0.75rem;
+  }
+  
+/*Contenido*/
+
+.contenido{
+  background-color: #f2edf3;
+}
+
+  
+  
