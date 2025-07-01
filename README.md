@@ -89,7 +89,7 @@ Este es el **Frontend** de la aplicación "Gestión Task", una plataforma para g
 1. Clona el repositorio
 
 ```bash
-git clone https://github.com/tuusuario/gestion-task-frontend.git
+git clone [https://github.com/tuusuario/gestion-task-frontend.git](https://github.com/nirn18345/GestionTaskFronted.git)
 cd gestion-task-frontend
 ```
 
@@ -99,7 +99,7 @@ cd gestion-task-frontend
 npm install
 ```
 
-3. Crea un archivo `.env` con la URL de la API:
+3.modificar archivo `.env` con la URL de la API:
 
 ```env
 VITE_API_URL=https://localhost:7130/api
